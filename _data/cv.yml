@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Full Name
-      value: Yui Ishihara
+      value: Yui A. Ishihara
     - name: Date of Birth
       value: 15th December 1999
     - name: Languages
@@ -42,7 +42,7 @@
       description:
         - Developing labs
         - Assisting students
-        
+
 
 - title: Academic Interests
   type: nested_list
