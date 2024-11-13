@@ -76,6 +76,3 @@ We also tested our models on the [Seeing Dynamic Scene in the Dark (SDSD)](https
 <div class="caption">
     YOLO Video Test Results! 🎬
 </div>
-
-
-{% endraw %}
