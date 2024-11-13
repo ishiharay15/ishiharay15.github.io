@@ -2,7 +2,7 @@
 layout: page
 title: Benchmarking Low-Light Image Enhancement (LLIE) and Restoration
 description: Assessing effectiveness of Low-Light Image Enhancement as a pre-processing method for computer vision tasks
-img: assets/img/
+img: assets/img/enhancement_results.jpg
 importance: 1
 category: work
 related_publications: true
