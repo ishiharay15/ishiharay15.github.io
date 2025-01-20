@@ -31,7 +31,7 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        
+
         {% if page.profile.more_info %}
           <!-- Render the more_info content as raw HTML -->
           <div class="more-info">
@@ -90,30 +90,24 @@ layout: default
   }
 
   // Clean up previous content to prevent residual text
-  document.querySelector('.typed-info').textContent = "";
+  document.querySelector('.typed-info').textContent = '';
 
   // Typed.js options
   var options = {
-    strings: [
-      "👋🏻 Hi, I'm Yui! 👋🏻",
-      "😎 Studying in Davis, CA 😎",
-      "🐱 I Love My Cats 🐱",
-      "🍓 Love Trying New Food! 🍓"
-    ],
+    strings: ["👋🏻 Hi, I'm Yui! 👋🏻", '😎 Studying in Davis, CA 😎', '🐱 I Love My Cats 🐱', '🍓 Love Trying New Food! 🍓'],
     typeSpeed: 40,
     backSpeed: 30,
     loop: true,
     shuffle: false, // Disable shuffle for sequential typing
     showCursor: true,
     cursorChar: '|',
-    onComplete: function(self) {
-      console.log("Typing completed!");
-    }
+    onComplete: function (self) {
+      console.log('Typing completed!');
+    },
   };
 
-
   // Initialize Typed.js for typing effect
-  var typed = new Typed(".typed-info", options);
+  var typed = new Typed('.typed-info', options);
 
   // Scrolling Text functionality
   var scrollingTextDiv = document.querySelector('.scrolling-text');
