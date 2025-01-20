@@ -22,18 +22,21 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
+        
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <!-- Render the more_info content as raw HTML -->
+          <div class="more-info">
+            {{ page.profile.more_info | raw }}
+          </div>
         {% endif %}
       </div>
     {% endif %}
@@ -41,7 +44,7 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
-    {% if page.news and site.announcements and site.announcements.enabled %}
+    {% if page.news and site.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
@@ -49,7 +52,7 @@ layout: default
     {% endif %}
 
     <!-- Latest posts -->
-    {% if site.latest_posts and site.latest_posts.enabled %}
+    {% if site.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
@@ -68,13 +71,80 @@ layout: default
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+    {% if site.newsletter.enabled and site.footer_fixed %}
+      {% include scripts/newsletter.liquid center=true %}
     {% endif %}
   </article>
 </div>
+
+<!-- Add the script for the typing and scrolling effects -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  // Destroy any existing instance to avoid duplication
+  if (window.typed) {
+    window.typed.destroy();
+  }
+
+  // Clean up previous content to prevent residual text
+  document.querySelector('.typed-info').textContent = "";
+
+  // Typed.js options
+  var options = {
+    strings: [
+      "👋🏻 Hi, I'm Yui! 👋🏻",
+      "😎 Studying in Davis, CA 😎",
+      "🐱 I Love My Cats 🐱",
+      "🍓 Love Trying New Food! 🍓"
+    ],
+    typeSpeed: 40,
+    backSpeed: 30,
+    loop: true,
+    shuffle: false, // Disable shuffle for sequential typing
+    showCursor: true,
+    cursorChar: '|',
+    onComplete: function(self) {
+      console.log("Typing completed!");
+    }
+  };
+
+
+  // Initialize Typed.js for typing effect
+  var typed = new Typed(".typed-info", options);
+
+  // Scrolling Text functionality
+  var scrollingTextDiv = document.querySelector('.scrolling-text');
+  var strings = options.strings;
+  var index = 0;
+
+  function updateScrollingText() {
+    scrollingTextDiv.textContent = strings[index];
+    index = (index + 1) % strings.length;
+  }
+
+  // Update the scrolling text every 3 seconds
+  setInterval(updateScrollingText, 10000);
+</script>
+
+<!-- Add the CSS for the scrolling text -->
+<style>
+  .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
