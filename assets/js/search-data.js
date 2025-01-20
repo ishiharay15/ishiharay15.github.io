@@ -431,16 +431,14 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-joined-as-undergraduate-research-assistant-in-rubinet-lab-uc-davis",
+          title: 'Joined as Undergraduate Research Assistant in RUBINET Lab, UC Davis.',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-started-m-s-degree-at-uc-davis",
+          title: 'Started M.S. degree at UC Davis. 📚',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-appointed-ta-position-for-eec174ay-applied-machine-learning-senior-design",
+          title: 'Appointed TA Position for EEC174AY - Applied Machine Learning (Senior Design).',
           description: "",
           section: "News",},{id: "projects-benchmarking-low-light-image-enhancement-llie-and-restoration",
           title: 'Benchmarking Low-Light Image Enhancement (LLIE) and Restoration',
