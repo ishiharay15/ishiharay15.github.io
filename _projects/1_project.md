@@ -21,7 +21,6 @@ related_publications: true
 
 This project focuses on enhancing image and video quality in low-light environments, particularly targeting the improvement of object detection in security camera footage. By addressing the challenges of lack of color and increased noise in low-light imagery, our solution aims to significantly enhance object recognition in dimly lit settings. Through the integration of noise reduction and color enhancement processes, coupled with object detection algorithms like YOLO, we aim to generate color-enhanced images with accurately detected object classes, thereby facilitating improved surveillance capabilities for security applications. To assess the efficacy of our methodology, we plan to employ metrics such as Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Mean Average Precision (mAP) to evaluate image quality improvements quantitatively. Additionally, we consider the compatibility of different image enhancement models with the YOLO object detection framework, ensuring optimal performance and accuracy in detecting objects within the reconstructed images. Our comprehensive approach aims to not only enhance image quality but also to optimize object detection capabilities, contributing to advancements in security surveillance effectiveness, and comprehension in low-light conditions.
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pipeline.jpg" title="Project Pipeline" class="img-fluid rounded z-depth-1" %}
@@ -54,6 +53,7 @@ GSAD introduces a diffusion-based method for low-light image enhancement, incorp
 **Mean Average Precision (mAP):** mAP calculates the average precision of model detections across all classes, using a defined accuracy threshold for object detection. This metric summarizes the model’s overall detection performance.\
 
 # Results:
+
 Our results demonstrate that the benchmarked models effectively enhance brightness, color, and reduce noise in low-light images, leading to improved object detection capabilities. By applying different enhancement techniques—RetinexFormer, Global Structure-Aware, LLFlow, and RQ-LLIE—each model showed distinct results in enhancing test images, leading to more accurate detection of objects using YOLOv5. Analysis of the [Exclusively Dark (ExDark) Image Dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset) reveals that the enhanced images enable YOLOv5 to detect objects with greater precision across various classes, compared to unenhanced images.
 
 <div class="row">
@@ -64,7 +64,6 @@ Our results demonstrate that the benchmarked models effectively enhance brightne
 <div class="caption">
     Night-Vision Restoration Results! 🔦
 </div>
-
 
 We also tested our models on the [Seeing Dynamic Scene in the Dark (SDSD)](https://github.com/dvlab-research/SDSD) dataset, which contains low-light videos, for further testing to validate the models' efficacy in dynamic, real-world scenarios. The results below highlights the potential of integrating low-light enhancement with object detection frameworks, promising advancements in security and surveillance applications.
 
