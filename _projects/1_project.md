@@ -1,81 +1,78 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Benchmarking Low-Light Image Enhancement (LLIE) and Restoration
+description: Assessing effectiveness of Low-Light Image Enhancement as a pre-processing method for computer vision tasks
+img: assets/img/enhancement_results.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/yolo_oppo_results.gif" title="Project Results" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Night-Vision Restoration Pipeline! 🔦
+</div>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Project Overview:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project focuses on enhancing image and video quality in low-light environments, particularly targeting the improvement of object detection in security camera footage. By addressing the challenges of lack of color and increased noise in low-light imagery, our solution aims to significantly enhance object recognition in dimly lit settings. Through the integration of noise reduction and color enhancement processes, coupled with object detection algorithms like YOLO, we aim to generate color-enhanced images with accurately detected object classes, thereby facilitating improved surveillance capabilities for security applications. To assess the efficacy of our methodology, we plan to employ metrics such as Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Mean Average Precision (mAP) to evaluate image quality improvements quantitatively. Additionally, we consider the compatibility of different image enhancement models with the YOLO object detection framework, ensuring optimal performance and accuracy in detecting objects within the reconstructed images. Our comprehensive approach aims to not only enhance image quality but also to optimize object detection capabilities, contributing to advancements in security surveillance effectiveness, and comprehension in low-light conditions.
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/pipeline.jpg" title="Project Pipeline" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Night-Vision Restoration Pipeline! 🌙
 </div>
+
+# Benchmarked Models:
+
+**[Low-Light Image Enhancement with Multi-stage Residue Quantization (RQ-LLIE)](https://github.com/LiuYunlong99/RQ-LLIE):**
+RQ-LLIE proposes a brightness-aware network for low-light image enhancement that uses normal-light priors to improve results. The method combines normal-light and low-light features and employs a brightness-aware attention module.\
+
+**[Retinexformer](https://github.com/caiyuanhao1998/Retinexformer):**
+The Retinexformer model is a One-stage Retinex-based Framework (ORF) for LLIE, using an Illumination-Guided Transformer (IGT) to model non-local interactions and restore image corruption.\
+
+**[LLFormer](https://github.com/TaoWangzj/LLFormer):**
+LLFormer is a transformer-based method that uses axis-based multi-head self-attention and cross-layer attention fusion to reduce complexity and improve performance.\
+
+**[Global Structure-Aware Diffusion Process for Low-Light Image Enhancement (GSAD)](https://github.com/jinnh/GSAD):**
+GSAD introduces a diffusion-based method for low-light image enhancement, incorporating curvature regularization and uncertainty-guided techniques to improve the enhancement process.
+
+# Benchmarking Metrics:
+
+**Peak Signal-to-Noise Ratio (PSNR):** PSNR quantifies image quality by comparing the original and enhanced images, focusing on greyscale intensity and RGB channels independently. It provides a measure of how closely the color and intensity of the two images align.\
+
+**Structural Similarity Index (SSIM):** SSIM evaluates similarity in luminance, contrast, and structure between original and enhanced images. This metric offers a broader assessment of visual fidelity, often providing a more accurate representation than PSNR.\
+
+**Mean Average Precision (mAP):** mAP calculates the average precision of model detections across all classes, using a defined accuracy threshold for object detection. This metric summarizes the model’s overall detection performance.\
+
+# Results:
+Our results demonstrate that the benchmarked models effectively enhance brightness, color, and reduce noise in low-light images, leading to improved object detection capabilities. By applying different enhancement techniques—RetinexFormer, Global Structure-Aware, LLFlow, and RQ-LLIE—each model showed distinct results in enhancing test images, leading to more accurate detection of objects using YOLOv5. Analysis of the [Exclusively Dark (ExDark) Image Dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset) reveals that the enhanced images enable YOLOv5 to detect objects with greater precision across various classes, compared to unenhanced images.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/enhancement_results.jpg" title="Enhancement Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Night-Vision Restoration Results! 🔦
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+We also tested our models on the [Seeing Dynamic Scene in the Dark (SDSD)](https://github.com/dvlab-research/SDSD) dataset, which contains low-light videos, for further testing to validate the models' efficacy in dynamic, real-world scenarios. The results below highlights the potential of integrating low-light enhancement with object detection frameworks, promising advancements in security and surveillance applications.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/yolo_oppo_results.gif" title="Video Enhancement Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    YOLO Video Test Results! 🎬
 </div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
