@@ -19,18 +19,16 @@ I am a 1st year working on my Master's in Electrical and Computer Engineering at
 I am advised by Prof. Chen-Nee Chuah as a member of
 <a href="https://www.ece.ucdavis.edu/~chuah/rubinet">RUBINET Research Lab</a>.
 I received my B.S. in Electrical Engineering from UC Davis in March 2024.
-My research focus is in computer vision and optimization on edge devices, with an extra interest in the field of robotics.
 
 <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
 
 <!-- Additional Information Section -->
 <div class="additional-section mt-3">
-<h4>Research Interests: </h4>
+<h5><strong>Research Interests: </strong></h5>
 <p class="additional-text">
 
 <ul style="list-style-type: circle;">
-  <li>AI for Health Application</li>
-  <li>Computer Vision (CV)</li>
+  <li>AI for Health Applications</li>
   <li>EdgeAI (Neural Network Compression)</li>
   <li>Multi-Modal LLMs (Large Language Models & Vision-Language Models)</li>
 </ul>

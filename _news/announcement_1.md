@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined as Undergraduate Research Assistant in [RUBINET Lab](https://www.ece.ucdavis.edu/~chuah/rubinet), UC Davis.
+Joined as **Undergraduate Research Assistant** in [RUBINET Lab](https://www.ece.ucdavis.edu/~chuah/rubinet), UC Davis.

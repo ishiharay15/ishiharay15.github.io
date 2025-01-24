@@ -1,4 +1,85 @@
 /*******************************************************************************
+ * New Additions for Rounded Corners, Shadows, Buttons, and Links
+ ******************************************************************************/
+
+/* Rounded Corners for Cards, Buttons, and Elements */
+.card,
+.button,
+.footer,
+.table,
+.newsletter-form-input,
+.newsletter-form-button {
+  border-radius: 12px; /* Added rounded corners */
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: var(--global-theme-color); /* Primary theme color */
+  color: var(--global-hover-text-color); /* Hover text color */
+  border: none;
+  border-radius: 8px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Padding for better UX */
+  font-family: "Poppins", sans-serif; /* Friendly professional font */
+  font-weight: 500;
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  //transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth animations */
+}
+
+/* Button Hover Effects */
+button:hover,
+.btn:hover {
+  background-color: var(--global-hover-color); /* Softer hover color */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Links */
+a {
+  color: var(--global-theme-color); /* Primary theme color */
+  text-decoration: none; /* Clean links without underline */
+  transition:
+    color 0.3s ease,
+    text-decoration 0.2s ease; /* Smooth color changes */
+}
+
+a:hover {
+  color: var(--global-hover-color); /* Softer color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/*******************************************************************************
+ * Navigation and Button Fixes
+ ******************************************************************************/
+
+// /* General Style for Links and Buttons */
+// .navbar-nav .nav-item .nav-link{
+//   background-color: var(--global-bg-color); /* Match background color */
+//   color: var(--global-text-color); /* Default text color */
+//   padding: 10px 15px; /* Add spacing */
+//   font-size: 1rem; /* Consistent font size */
+//   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+// }
+
+/* Hover Effects for Links and Buttons */
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--global-hover-text-color); /* Hover text color */
+  border-color: var(--global-hover-color); /* Match border to hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+// /* Active Link Styling */
+// .navbar-nav .nav-item.active > .nav-link {
+//   background-color: var(--global-theme-color); /* Highlight active link */
+//   color: var(--global-hover-text-color); /* Text contrast */
+//   font-weight: bold; /* Emphasize active page */
+// }
+
+/*******************************************************************************
+ * Original Styles
+ ******************************************************************************/
+
+/*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
@@ -244,7 +325,7 @@ ul.task-list input[type="checkbox"] {
 // Navbar customization
 
 .navbar {
-  box-shadow: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
@@ -1013,7 +1094,7 @@ progress::-moz-progress-bar {
 
 .btn-group.dropdown {
   .btn {
-    box-shadow: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: none;
   }
 

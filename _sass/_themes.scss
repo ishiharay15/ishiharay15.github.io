@@ -5,31 +5,50 @@
 @use "sass:color";
 
 :root {
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  // --global-bg-color: #{$white-color};
+  // --global-code-bg-color: #{$code-bg-color-light};
+  // --global-text-color: #{$black-color};
+  // --global-text-color-light: #{$grey-color};
+  // --global-theme-color: #{$purple-color};
+  // --global-hover-color: #{$purple-color};
+  // --global-hover-text-color: #{$white-color};
+  // --global-footer-bg-color: #{$grey-color-dark};
+  // --global-footer-text-color: #{$grey-color-light};
+  // --global-footer-link-color: #{$white-color};
+  // --global-distill-app-color: #{$grey-color};
+  // --global-divider-color: rgba(0, 0, 0, 0.1);
+  // --global-card-bg-color: #{$white-color};
+  // --global-highlight-color: #{$red-color-dark};
+  // --global-back-to-top-bg-color: rgba(
+  //   #{color.channel($black-color, "red", $space: rgb)},
+  //   #{color.channel($black-color, "green", $space: rgb)},
+  //   #{color.channel($black-color, "blue", $space: rgb)},
+  //   0.4
+  // );
+  // --global-back-to-top-text-color: #{$white-color};
+  // --global-newsletter-bg-color: #{$white-color};
+  // --global-newsletter-text-color: #{$black-color};
 
-  --global-tip-block: #42b983;
+  --global-bg-color: #ffffff; /* Soft cream background */
+  --global-code-bg-color: #fdf6ec; /* Light cream for code blocks */
+  --global-text-color: #4a4a4a; /* Soft dark gray for text */
+  --global-text-color-light: #7a7a7a; /* Lighter gray for secondary text */
+  --global-theme-color: #9c5fec; /* Cozy lavender for accents */
+  --global-hover-color: #d1a6f7; /* Softer lavender for hover effects */
+  --global-hover-text-color: #ffffff; /* White text for hover */
+  --global-footer-bg-color: #f5e0d9; /* Soft pastel pink for footer */
+  --global-footer-text-color: #4a4a4a; /* Match text color */
+  --global-footer-link-color: #b889f4; /* Lavender for links */
+  --global-distill-app-color: #e8c0ff; /* Pastel purple for app buttons */
+  --global-divider-color: rgba(74, 74, 74, 0.2); /* Subtle gray divider */
+  --global-card-bg-color: #ffffff; /* Keep cards clean with white */
+  --global-highlight-color: #ffb6b6; /* Soft pink for highlights */
+  --global-back-to-top-bg-color: rgba(184, 137, 244, 0.5); /* Transparent lavender */
+  --global-back-to-top-text-color: #ffffff; /* White text for back-to-top */
+  --global-newsletter-bg-color: #fff7f3; /* Soft pastel pink */
+  --global-newsletter-text-color: #4a4a4a; /* Match text color */
+
+  --global-tip-block: #547566;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
   --global-tip-block-title: #359469;
