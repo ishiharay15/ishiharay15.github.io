@@ -14,7 +14,7 @@ related_publications: true
     </div>
 </div>
 <div class="caption">
-    Night-Vision Restoration Pipeline! 🔦
+    Night-Vision Restoration! 🔦
 </div>
 
 # Project Overview:
