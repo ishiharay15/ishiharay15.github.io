@@ -5,48 +5,24 @@
 @use "sass:color";
 
 :root {
-  // --global-bg-color: #{$white-color};
-  // --global-code-bg-color: #{$code-bg-color-light};
-  // --global-text-color: #{$black-color};
-  // --global-text-color-light: #{$grey-color};
-  // --global-theme-color: #{$purple-color};
-  // --global-hover-color: #{$purple-color};
-  // --global-hover-text-color: #{$white-color};
-  // --global-footer-bg-color: #{$grey-color-dark};
-  // --global-footer-text-color: #{$grey-color-light};
-  // --global-footer-link-color: #{$white-color};
-  // --global-distill-app-color: #{$grey-color};
-  // --global-divider-color: rgba(0, 0, 0, 0.1);
-  // --global-card-bg-color: #{$white-color};
-  // --global-highlight-color: #{$red-color-dark};
-  // --global-back-to-top-bg-color: rgba(
-  //   #{color.channel($black-color, "red", $space: rgb)},
-  //   #{color.channel($black-color, "green", $space: rgb)},
-  //   #{color.channel($black-color, "blue", $space: rgb)},
-  //   0.4
-  // );
-  // --global-back-to-top-text-color: #{$white-color};
-  // --global-newsletter-bg-color: #{$white-color};
-  // --global-newsletter-text-color: #{$black-color};
-
-  --global-bg-color: #ffffff; /* Soft cream background */
-  --global-code-bg-color: #fdf6ec; /* Light cream for code blocks */
-  --global-text-color: #4a4a4a; /* Soft dark gray for text */
-  --global-text-color-light: #7a7a7a; /* Lighter gray for secondary text */
-  --global-theme-color: #9c5fec; /* Cozy lavender for accents */
-  --global-hover-color: #d1a6f7; /* Softer lavender for hover effects */
+  --global-bg-color: #ffffff; /* Soft mint green background */
+  --global-code-bg-color: #edf7e9; /* Light green tint for code blocks */
+  --global-text-color: #3a4a3c; /* Soft dark green-gray for text */
+  --global-text-color-light: #6a7a6c; /* Lighter green-gray for secondary text */
+  --global-theme-color: #76bd8a; /* Cozy pastel green for accents */
+  --global-hover-color: #a7d8b4; /* Softer green for hover effects */
   --global-hover-text-color: #ffffff; /* White text for hover */
-  --global-footer-bg-color: #f5e0d9; /* Soft pastel pink for footer */
-  --global-footer-text-color: #4a4a4a; /* Match text color */
-  --global-footer-link-color: #b889f4; /* Lavender for links */
-  --global-distill-app-color: #e8c0ff; /* Pastel purple for app buttons */
-  --global-divider-color: rgba(74, 74, 74, 0.2); /* Subtle gray divider */
-  --global-card-bg-color: #ffffff; /* Keep cards clean with white */
-  --global-highlight-color: #ffb6b6; /* Soft pink for highlights */
-  --global-back-to-top-bg-color: rgba(184, 137, 244, 0.5); /* Transparent lavender */
+  --global-footer-bg-color: #eaf4ea; /* Soft pastel green for footer */
+  --global-footer-text-color: #3a4a3c; /* Match footer text to main text */
+  --global-footer-link-color: #78b68c; /* Muted green for links */
+  --global-distill-app-color: #cde8cf; /* Light pastel green for app buttons */
+  --global-divider-color: rgba(58, 74, 60, 0.2); /* Subtle green-gray divider */
+  --global-card-bg-color: #ffffff; /* Clean white for cards */
+  --global-highlight-color: #b6e1b6; /* Soft lime green for highlights */
+  --global-back-to-top-bg-color: rgba(120, 182, 140, 0.5); /* Transparent green */
   --global-back-to-top-text-color: #ffffff; /* White text for back-to-top */
-  --global-newsletter-bg-color: #fff7f3; /* Soft pastel pink */
-  --global-newsletter-text-color: #4a4a4a; /* Match text color */
+  --global-newsletter-bg-color: #f2fbf2; /* Lightest mint green for newsletter */
+  --global-newsletter-text-color: #3a4a3c; /* Match newsletter text color */
 
   --global-tip-block: #547566;
   --global-tip-block-bg: #e2f5ec;
@@ -95,28 +71,47 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
+  // --global-bg-color: #{$grey-color-dark};
+  // --global-code-bg-color: #{$code-bg-color-dark};
+  // --global-text-color: #{$grey-color-light};
+  // --global-text-color-light: #{$grey-color};
+  // --global-theme-color: #{$cyan-color};
+  // --global-hover-color: #{$cyan-color};
+  // --global-hover-text-color: #{$white-color};
+  // --global-footer-bg-color: #{$grey-color-light};
+  // --global-footer-text-color: #{$grey-color-dark};
+  // --global-footer-link-color: #{$black-color};
+  // --global-distill-app-color: #{$grey-color-light};
+  // --global-divider-color: #424246;
+  // --global-card-bg-color: #{$grey-900};
+  // --global-back-to-top-bg-color: rgba(
+  //   #{color.channel($white-color, "red", $space: rgb)},
+  //   #{color.channel($white-color, "green", $space: rgb)},
+  //   #{color.channel($white-color, "blue", $space: rgb)},
+  //   0.5
+  // );
+  // --global-back-to-top-text-color: #{$black-color};
+  // --global-newsletter-bg-color: #{$grey-color-light};
+  // --global-newsletter-text-color: #{$grey-color-dark};
+
+  --global-bg-color: #{$grey-color-dark}; /* Keep the dark grey background */
+  --global-code-bg-color: #2a2f27; /* Darker greenish-gray for code blocks */
+  --global-text-color: #ffffff; /* Soft forest green-gray for main text */
+  --global-text-color-light: #8ea390; /* Lighter forest green-gray for secondary text */
+  --global-theme-color: #5a9b6f; /* Forest green for accents */
+  --global-hover-color: #77c28f; /* Brighter green for hover effects */
+  --global-hover-text-color: #ffffff; /* White text for hover states */
+  --global-footer-bg-color: #2e3b30; /* Dark greenish-gray for footer */
+  --global-footer-text-color: #c5d9c4; /* Match text color for footer */
+  --global-footer-link-color: #77c28f; /* Brighter green for footer links */
+  --global-distill-app-color: #4a6e53; /* Deep forest green for app buttons */
+  --global-divider-color: rgba(197, 217, 196, 0.3); /* Subtle green divider */
+  --global-card-bg-color: #{$grey-900}; /* Dark greenish-gray for cards */
+  --global-highlight-color: #7fc593; /* Bright green for highlights */
+  --global-back-to-top-bg-color: rgba(122, 194, 143, 0.5); /* Transparent bright green */
+  --global-back-to-top-text-color: #ffffff; /* White text for back-to-top */
+  --global-newsletter-bg-color: #2e3b30; /* Match footer background for newsletter */
+  --global-newsletter-text-color: #c5d9c4; /* Match main text color for newsletter */
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
