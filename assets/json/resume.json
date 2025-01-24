@@ -1,200 +1,154 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Yui Ishihara",
+    "currently": "MS ECE @ UC Davis",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "yuiishi@ucdavis.edu",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "postalCode": "CA 95616",
+      "city": "Davis",
       "countryCode": "US",
       "region": "California"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "yui-ishihara-45812a134",
+        "url": "https://www.linkedin.com/in/yui-ishihara-45812a134/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ishiharay15",
+        "url": "https://github.com/ishiharay15/"
+      },
+      {
+        "network": "Personal Website",
+        "url": "https://ishiharay15.github.io/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "CITRIS @ UC Davis Health",
+      "position": "Graduate Student Researcher",
+      "url": "https://citris-uc.org/about/campuses/uc-davis/",
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "summary": "Researching CV methods for healthcare, leveraging NLP and LLMs for early dementia detection, and developing algorithms for human activity recognition using video and vibration data.",
+      "highlights": [
+        "Object detection, segmentation, and pose estimation in healthcare",
+        "NLP and LLM-based early dementia detection",
+        "Machine learning algorithms for human activity recognition"
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Department of Electrical and Computer Engineering, UC Davis",
+      "position": "Teaching Assistant",
+      "url": "https://www.ece.ucdavis.edu/",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "summary": "Designed and taught lab assignments, delivered guest lectures, and mentored design teams.",
+      "highlights": [
+        "Lab assignments focused on CNNs, segmentation, and object detection",
+        "Lectures on model optimization and pruning",
+        "Mentoring project teams"
+      ]
+    },
+    {
+      "name": "RUBINET Lab",
+      "position": "Undergraduate Research Assistant",
+      "url": "https://www.ece.ucdavis.edu/~chuah/rubinet/",
+      "startDate": "2024-03",
+      "endDate": "2024-09",
+      "summary": "Evaluated and optimized LLIE models for real-time inference and edge deployability.",
+      "highlights": [
+        "Pruning methods for LLIE models",
+        "Trade-offs in magnitude vs gradient-based pruning",
+        "Proposed custom loss functions to balance size and quality"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "University of California, Davis",
+      "location": "Davis, CA",
+      "url": "https://www.ucdavis.edu/",
+      "area": "Computer Engineering",
+      "studyType": "M.S.",
+      "startDate": "2024-09",
+      "endDate": "2025-09 (Expected)"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "institution": "University of California, Davis",
+      "location": "Davis, CA",
+      "url": "https://www.ucdavis.edu/",
+      "area": "Electrical Engineering",
+      "studyType": "B.S.",
+      "startDate": "2018-09",
+      "endDate": "2024-03"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Programming / Frameworks",
+      "level": "",
+      "icon": "",
+      "keywords": ["Python", "PyTorch", "HuggingFace", "Scikit-Learn", "YOLO", "Docker", "Git", "Conda", "OpenCV"]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
+      "language": "Japanese",
       "fluency": "Fluent",
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Dr. Chen-Nee Chuah",
+      "icon": "",
+      "reference": "Thesis Advisor, UC Davis. Email: chuah@ucdavis.edu, Phone: (530) 752-5825"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Kartik Patwari",
+      "icon": "",
+      "reference": "PhD Candidate, UC Davis. Email: kpatwari@ucdavis.edu, Phone: (916) 579-4411"
+    },
+    {
+      "name": "Dr. Alyssa Weakley",
+      "icon": "",
+      "reference": "Project Mentor, UC Davis School of Medicine."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Dementia Detection from Audio Signals",
+      "summary": "Developing frameworks leveraging LLMs for early dementia detection.",
+      "highlights": [],
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "url": ""
+    },
+    {
+      "name": "Health Applications Targeted Compression of Vision Models",
+      "summary": "Automating video annotation and aligning actions to time-series sensor data.",
+      "highlights": [],
+      "startDate": "2024-10",
+      "endDate": "Present",
+      "url": ""
+    },
+    {
+      "name": "Benchmarking MLLMs for Visual-Lingual Hallucinations",
+      "summary": "Created datasets to evaluate MLLMs’ reliance on language vs. visual inputs.",
+      "highlights": ["Counterintuitive dataset for testing lingual biases in multimodal models"],
+      "startDate": "2024-07",
+      "endDate": "2024-09",
+      "url": ""
     }
   ]
 }
