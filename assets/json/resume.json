@@ -102,8 +102,10 @@
     },
     {
       "name": "Optimizing and Compressing Deep Learning Models for Image Preprocessing (LLIE)",
-      "highlights": ["Assessing pruning techniques for image restoration methods.",
-                    "Benchmarking LLIE techniques for noise reduction, color restoration, edge deployability (FLOPs)."],
+      "highlights": [
+        "Assessing pruning techniques for image restoration methods.",
+        "Benchmarking LLIE techniques for noise reduction, color restoration, edge deployability (FLOPs)."
+      ],
       "startDate": "2024-03",
       "endDate": "Present",
       "url": ""
@@ -113,9 +115,11 @@
     {
       "name": "Benchmarking MLLMs for Visual-Lingual Hallucinations and Bias",
       "summary": "YOLOv11, GroundingDino, SAMv2, PyTorch",
-      "highlights": ["Created counterintuitive dataset to evaluate MLLMs’ reliance on language vs. visual input.",
-                    "Developed test cases exposing lingual bias in multimodal models without visual context.",
-                    "Analyzed MLLM responses to counter common-sense images, identifying hallucination."],
+      "highlights": [
+        "Created counterintuitive dataset to evaluate MLLMs’ reliance on language vs. visual input.",
+        "Developed test cases exposing lingual bias in multimodal models without visual context.",
+        "Analyzed MLLM responses to counter common-sense images, identifying hallucination."
+      ],
       "startDate": "2025-07",
       "endDate": "2025-09",
       "url": ""
@@ -123,9 +127,11 @@
     {
       "name": "Benchmarking Low-Light Image Enhancement (LLIE) and Restoration",
       "summary": "PyTorch, LLIE (CNNs, ViTs, Diffusion), YOLOv9",
-      "highlights": ["Benchmarked LLIE models to boost image quality and support downstream vision tasks.",
-                    "Implemented YOLO on preprocessed images from LLIE models, validating its performance on low-light dataset.",
-                    "Implemented the solution in video footage, highlighting its potential for deployment in security systems."],
+      "highlights": [
+        "Benchmarked LLIE models to boost image quality and support downstream vision tasks.",
+        "Implemented YOLO on preprocessed images from LLIE models, validating its performance on low-light dataset.",
+        "Implemented the solution in video footage, highlighting its potential for deployment in security systems."
+      ],
       "startDate": "2024-01",
       "endDate": "2024-03",
       "url": "https://github.com/ishiharay15/night-vision-restoration"
@@ -166,40 +172,37 @@
   ],
 
   "references": [
-      {
-        "name": "Dr. Chen-Nee Chuah",
-        "icon": "fa-solid fa-user-graduate",
-        "url": "https://www.ece.ucdavis.edu/~chuah/rubinet/",
-        "reference": "AAAS & IEEE Fellow, ACM Distinguished Scientist Child Family Professor in Engineering",
-        "additional_info": "Department of Electrical & Computer Engineering, University of California, Davis",
-        "labels": [
-          { "category": "Email", "value": "chuah at ucdavis.edu" },
-          { "category": "Phone Number", "value": "(530) 752-5825" },
-          { "category": "Relationship", "value": "Thesis Advisor" }
-        ]
-      },
-      {
-        "name": "Dr. Alyssa Weakley",
-        "icon": "fa-solid fa-user-graduate",
-        "url": "https://www.linkedin.com/in/alyssa-weakley-phd-445530a2/",
-        "reference": "Assistant Professor, Department of Neurology",
-        "additional_info": "University of California, Davis - School of Medicine",
-        "labels": [
-          { "category": "Relationship", "value": "Project Mentor & Collaborator" }
-        ]
-      },
-      {
-        "name": "Kartik Patwari",
-        "icon": "fa-solid fa-user-astronaut",
-        "url": "https://kartikp7.github.io/",
-        "reference": "Ph.D. Candidate",
-        "additional_info": "University of California, Davis",
-        "labels": [
-          { "category": "Email", "value": " kpatwari at ucdavis.edu" },
-          { "category": "Phone Number", "value": "(916) 579-4411" },
-          {"category": "Relationship", "value": "Project Supervisor, Research Collaborator" }
-        ]
-      }    
+    {
+      "name": "Dr. Chen-Nee Chuah",
+      "icon": "fa-solid fa-user-graduate",
+      "url": "https://www.ece.ucdavis.edu/~chuah/rubinet/",
+      "reference": "AAAS & IEEE Fellow, ACM Distinguished Scientist Child Family Professor in Engineering",
+      "additional_info": "Department of Electrical & Computer Engineering, University of California, Davis",
+      "labels": [
+        { "category": "Email", "value": "chuah at ucdavis.edu" },
+        { "category": "Phone Number", "value": "(530) 752-5825" },
+        { "category": "Relationship", "value": "Thesis Advisor" }
+      ]
+    },
+    {
+      "name": "Dr. Alyssa Weakley",
+      "icon": "fa-solid fa-user-graduate",
+      "url": "https://www.linkedin.com/in/alyssa-weakley-phd-445530a2/",
+      "reference": "Assistant Professor, Department of Neurology",
+      "additional_info": "University of California, Davis - School of Medicine",
+      "labels": [{ "category": "Relationship", "value": "Project Mentor & Collaborator" }]
+    },
+    {
+      "name": "Kartik Patwari",
+      "icon": "fa-solid fa-user-astronaut",
+      "url": "https://kartikp7.github.io/",
+      "reference": "Ph.D. Candidate",
+      "additional_info": "University of California, Davis",
+      "labels": [
+        { "category": "Email", "value": " kpatwari at ucdavis.edu" },
+        { "category": "Phone Number", "value": "(916) 579-4411" },
+        { "category": "Relationship", "value": "Project Supervisor, Research Collaborator" }
+      ]
+    }
   ]
-
 }
