@@ -2,7 +2,7 @@
 layout: page
 title: Benchmarking Low-Light Image Enhancement (LLIE) and Restoration
 description: Assessing effectiveness of Low-Light Image Enhancement as a pre-processing method for computer vision tasks
-img: assets/img/enhancement_results.jpg
+img: assets/img/1_project/enhancement_results.jpg
 importance: 1
 category: work
 related_publications: true
@@ -10,7 +10,7 @@ related_publications: true
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/yolo_oppo_results.gif" title="Project Results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1_project/yolo_oppo_results.gif" title="Project Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -23,7 +23,7 @@ This project focuses on enhancing image and video quality in low-light environme
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pipeline.jpg" title="Project Pipeline" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1_project/pipeline.jpg" title="Project Pipeline" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -58,7 +58,7 @@ Our results demonstrate that the benchmarked models effectively enhance brightne
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/enhancement_results.jpg" title="Enhancement Results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1_project/enhancement_results.jpg" title="Enhancement Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -69,7 +69,7 @@ We also tested our models on the [Seeing Dynamic Scene in the Dark (SDSD)](https
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/yolo_oppo_results.gif" title="Video Enhancement Results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1_project/yolo_oppo_results.gif" title="Video Enhancement Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
