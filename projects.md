@@ -1,5 +1,3 @@
-# **Pruning Demo**
-
 This Pruning Demo is adapted from the **TinyML and Efficient Deep Learning Computing** Course by Song Han at MIT.
 
 Contributions include visualization of magnitude based color scale of weights for all kernels of `conv1` layer of the model.
@@ -270,59 +268,6 @@ for split in ['train', 'test']:
   )
 ```
 
-    Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
-    Failed to download (trying next):
-    HTTP Error 403: Forbidden
-
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
-
-
-    100%|██████████| 9.91M/9.91M [00:02<00:00, 4.18MB/s]
-
-
-    Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
-
-    Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
-    Failed to download (trying next):
-    HTTP Error 403: Forbidden
-
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
-
-
-    100%|██████████| 28.9k/28.9k [00:00<00:00, 137kB/s]
-
-
-    Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
-
-    Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
-    Failed to download (trying next):
-    HTTP Error 403: Forbidden
-
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
-
-
-    100%|██████████| 1.65M/1.65M [00:06<00:00, 247kB/s]
-
-
-    Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
-
-    Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
-    Failed to download (trying next):
-    HTTP Error 403: Forbidden
-
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz
-    Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
-
-
-    100%|██████████| 4.54k/4.54k [00:00<00:00, 2.89MB/s]
-
-    Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
-
-Create a set of test images for demo.
-
 ```python
 demos = {0: 3, 1: 2, 2: 1, 3: 30, 4: 4, 5: 15, 6: 11, 7: 0, 8: 61, 9: 9}
 demo_inputs, demo_images = [], []
@@ -457,7 +402,6 @@ visualize()
 ```python
 # Training
 
-'''
 lr = 1.0
 lr_step_gamma = 0.7
 num_epochs = 5
@@ -480,10 +424,7 @@ for epoch in range(num_epochs):
 print(f"=> loading best checkpoint")
 model.load_state_dict(best_checkpoint['state_dict'])
 recover_model = lambda: model.load_state_dict(best_checkpoint['state_dict'])
-'''
 
-# PRETRAINED_WEIGHTS = '/content/drive/Shareddrives/EEC174ABY Fall2024 (TA)/Lecture Slides/pruning_demo_weights.pth'
-# torch.save(model.state_dict(), PRETRAINED_WEIGHTS)
 ```
 
 ```python
@@ -514,9 +455,6 @@ print(f"dense model has accuracy={dense_model_accuracy:.2f}%")
 print(f"dense model has size={dense_model_size/MiB:.2f} MiB")
 visualize(True)
 ```
-
-    eval:   0%|          | 0/10 [00:00<?, ?it/s]
-
 
     dense model has accuracy=98.98%
     dense model has size=4.58 MiB
@@ -549,9 +487,6 @@ print(f"{sparsity*100}% sparse model has size={sparse_model_size/MiB:.2f} MiB, "
       f"the {dense_model_size/MiB:.2f} MiB dense model")
 visualize(True)
 ```
-
-    eval:   0%|          | 0/10 [00:00<?, ?it/s]
-
 
     90.0% sparse model has accuracy=19.11%
     90.0% sparse model has size=0.46 MiB, which is 9.98X smaller than the 4.58 MiB dense model
@@ -594,26 +529,7 @@ for epoch in range(num_finetune_epochs):
 
     Finetuning Fine-grained Pruned Sparse Model
 
-
-
-    train:   0%|          | 0/235 [00:00<?, ?it/s]
-
-
-
-    eval:   0%|          | 0/10 [00:00<?, ?it/s]
-
-
         Epoch 1 Sparse Accuracy 97.89% / Best Sparse Accuracy: 97.89%
-
-
-
-    train:   0%|          | 0/235 [00:00<?, ?it/s]
-
-
-
-    eval:   0%|          | 0/10 [00:00<?, ?it/s]
-
-
         Epoch 2 Sparse Accuracy 98.42% / Best Sparse Accuracy: 98.42%
 
 ```python
@@ -626,9 +542,6 @@ print(f"{sparsity*100}% sparse model has size={sparse_model_size/MiB:.2f} MiB, "
       f"the {dense_model_size/MiB:.2f} MiB dense model")
 visualize(True)
 ```
-
-    eval:   0%|          | 0/10 [00:00<?, ?it/s]
-
 
     90.0% sparse model has accuracy=98.42%
     90.0% sparse model has size=0.46 MiB, which is 9.98X smaller than the 4.58 MiB dense model
