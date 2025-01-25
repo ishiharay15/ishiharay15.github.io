@@ -8,4 +8,4 @@ category: teaching
 related_publications: false
 ---
 
-<iframe src="https://nbviewer.org/github/ishiharay15/demo_pruning/blob/main/Demo_Pruning.ipynb" width="100%" height="600px" frameborder="0"></iframe>
+{% include_relative /notebooks/Demo_Pruning.md %}
