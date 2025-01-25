@@ -452,7 +452,6 @@ visualize()
 <!-- ![png](./Demo_Pruning_files/Demo_Pruning_24_0.png) -->
 <img src="./Demo_Pruning_files/Demo_Pruning_24_0.png" alt="Pruning Visualization" width="100%">
 
-
 # Pre-train Neural Network on MNIST
 
 ```python
@@ -525,7 +524,6 @@ visualize(True)
 <!-- ![png](Demo_Pruning_files/Demo_Pruning_31_2.png) -->
 <img src="./Demo_Pruning_files/Demo_Pruning_31_2.png" alt="Pruning Visualization" width="100%">
 
-
 # Visualize the conv1 Weights Before Pruning
 
 ```python
@@ -536,7 +534,6 @@ visualize_weights(model, "conv1.weight", "conv1 Weights Before Pruning")
 
 <!-- ![png](Demo_Pruning_files/Demo_Pruning_33_0.png) -->
 <img src="./Demo_Pruning_files/Demo_Pruning_33_0.png" alt="Pruning Visualization" width="100%">
-
 
 # Let's Prune the Model and Re-Evaluate the Accuracy.
 
@@ -562,7 +559,6 @@ visualize(True)
 <!-- ![png](Demo_Pruning_files/Demo_Pruning_35_2.png) -->
 <img src="./Demo_Pruning_files/Demo_Pruning_35_2.png" alt="Pruning Visualization" width="100%">
 
-
 # Now, Re-Visualize the conv1 Weights After Pruning!
 
 ```python
@@ -571,7 +567,6 @@ visualize_weights(model, "conv1.weight", "conv1 Weights After Pruning")
 
 <!-- ![png](Demo_Pruning_files/Demo_Pruning_37_0.png) -->
 <img src="./Demo_Pruning_files/Demo_Pruning_37_0.png" alt="Pruning Visualization" width="100%">
-
 
 # Let's Fine-tune the Pruned Model to Get Higher Accuracy
 
@@ -640,7 +635,6 @@ visualize(True)
 
 <!-- ![png](Demo_Pruning_files/Demo_Pruning_40_2.png) -->
 <img src="./Demo_Pruning_files/Demo_Pruning_40_2.png" alt="Pruning Visualization" width="100%">
-
 
 # Visualize the conv1 Weights After Fine-Tuning!
 
