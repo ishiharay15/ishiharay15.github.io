@@ -24,8 +24,8 @@ These projects demonstrate the following skills:
 - **Training and Evaluation:** Generating learning curves, confusion matrices, and medical statistics.
 
 Explore the assignment notebooks here:  
-[Phase 1: Arrhythmia Classification Using 1D CNN](https:github.com/EEC174-Fall24/MiniProjectB2/blob/main/B2_Phase1.ipynb)  
-[Phase 2: Lung CT Scan Segmentation](https://github.com/EEC174-Fall24/MiniProjectB2/blob/main/B2_Phase2.ipynb)
+[Phase 1: Arrhythmia Classification Using 1D CNN](https:github.com/EEC174-Fall24/MiniProjectB2/blob/main/B2_Phase1.ipynb){:target="\_blank"} \\
+[Phase 2: Lung CT Scan Segmentation](https://github.com/EEC174-Fall24/MiniProjectB2/blob/main/B2_Phase2.ipynb){:target="\_blank"}
 
 ---
 
