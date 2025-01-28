@@ -6,6 +6,7 @@ img: assets/img/1_project/enhancement_results.jpg
 importance: 1
 category: work
 related_publications: true
+date: 2024-06-01
 ---
 
 <div class="row">

@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Portfolio of teaching, research and personal projects through my Master's at UC Davis!
 nav: true
 nav_order: 3
-display_categories: [work, teaching, fun]
+display_categories: [teaching, work, fun]
 horizontal: false
 ---
 

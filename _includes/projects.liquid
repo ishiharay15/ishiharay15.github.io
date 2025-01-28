@@ -11,6 +11,10 @@
           class="card-img-top"
         %}
       {% endif %}
+      <div class="card-footer mt-auto">
+        <p class="text-muted"><strong>Date:</strong> {{ project.date | date: '%B %d, %Y' }}</p>
+      </div>
+
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>

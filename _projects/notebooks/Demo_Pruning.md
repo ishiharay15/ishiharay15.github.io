@@ -394,8 +394,7 @@ def visualize(with_predictions=False):
 visualize()
 ```
 
-<!-- ![png](./Demo_Pruning_files/Demo_Pruning_24_0.png) -->
-<img src="./Demo_Pruning_files/Demo_Pruning_24_0.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_24_0.png" title="Pruning Visualization" class="img-fluid rounded z-depth-1" %}
 
 # Pre-train Neural Network on MNIST
 
@@ -459,8 +458,7 @@ visualize(True)
     dense model has accuracy=98.98%
     dense model has size=4.58 MiB
 
-<!-- ![png](Demo_Pruning_files/Demo_Pruning_31_2.png) -->
-<img src="./Demo_Pruning_files/Demo_Pruning_31_2.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_31_2.png" title="MNIST Before" class="img-fluid rounded z-depth-1" %}
 
 # Visualize the conv1 Weights Before Pruning
 
@@ -470,8 +468,9 @@ visualize_weights(model, "conv1.weight", "conv1 Weights Before Pruning")
 
 ```
 
-<!-- ![png](Demo_Pruning_files/Demo_Pruning_33_0.png) -->
-<img src="./Demo_Pruning_files/Demo_Pruning_33_0.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_33_0.png" title="Before Pruning" class="img-fluid rounded z-depth-1" %}
+
+<!-- <img src="./Demo_Pruning/Demo_Pruning_33_0.png" alt="Pruning Visualization" width="100%"> -->
 
 # Let's Prune the Model and Re-Evaluate the Accuracy.
 
@@ -491,8 +490,9 @@ visualize(True)
     90.0% sparse model has accuracy=19.11%
     90.0% sparse model has size=0.46 MiB, which is 9.98X smaller than the 4.58 MiB dense model
 
-<!-- ![png](Demo_Pruning_files/Demo_Pruning_35_2.png) -->
-<img src="./Demo_Pruning_files/Demo_Pruning_35_2.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_35_2.png" title="Pruning Visualization" class="img-fluid rounded z-depth-1" %}
+
+<!-- <img src="./Demo_Pruning/Demo_Pruning_35_2.png" alt="MNIST After" width="100%"> -->
 
 # Now, Re-Visualize the conv1 Weights After Pruning!
 
@@ -500,8 +500,9 @@ visualize(True)
 visualize_weights(model, "conv1.weight", "conv1 Weights After Pruning")
 ```
 
-<!-- ![png](Demo_Pruning_files/Demo_Pruning_37_0.png) -->
-<img src="./Demo_Pruning_files/Demo_Pruning_37_0.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_37_0.png" title="After Pruning" class="img-fluid rounded z-depth-1" %}
+
+<!-- <img src="./Demo_Pruning/Demo_Pruning_37_0.png" alt="Pruning Visualization" width="100%"> -->
 
 # Let's Fine-tune the Pruned Model to Get Higher Accuracy
 
@@ -546,8 +547,9 @@ visualize(True)
     90.0% sparse model has accuracy=98.42%
     90.0% sparse model has size=0.46 MiB, which is 9.98X smaller than the 4.58 MiB dense model
 
-<!-- ![png](Demo_Pruning_files/Demo_Pruning_40_2.png) -->
-<img src="./Demo_Pruning_files/Demo_Pruning_40_2.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_40_2.png" title="MNIST Finetuning" class="img-fluid rounded z-depth-1" %}
+
+<!-- <img src="./Demo_Pruning/Demo_Pruning_40_2.png" alt="Pruning Visualization" width="100%"> -->
 
 # Visualize the conv1 Weights After Fine-Tuning!
 
@@ -555,4 +557,6 @@ visualize(True)
 visualize_weights(model, "conv1.weight", "conv1 Weights After Fine-Tuning")
 ```
 
-<img src="./Demo_Pruning_files/Demo_Pruning_42_0.png" alt="Pruning Visualization" width="100%">
+{% include figure.liquid loading="eager" path="assets/img/Demo_Pruning/Demo_Pruning_42_0.png" title="After Finetuning" class="img-fluid rounded z-depth-1" %}
+
+<!-- <img src="./Demo_Pruning/Demo_Pruning_42_0.png" alt="Pruning Visualization" width="100%"> -->
