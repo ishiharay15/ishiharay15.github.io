@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yui A. Ishihara
+title: Yui Ishihara
 first_name: Yui
-middle_name: A.
+middle_name:
 last_name: Ishihara
 email: yuiishi@ucdavis.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
