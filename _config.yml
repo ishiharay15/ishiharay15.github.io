@@ -180,9 +180,9 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: 
+include:
   - "_pages"
-  - "_includes"  # Add this line
+  - "_includes" # Add this line
 
 exclude:
   - bin/
