@@ -2,19 +2,6 @@
  * New Additions for Rounded Corners, Shadows, Buttons, and Links
  ******************************************************************************/
 
-.card {
-  position: relative; /* Ensure the footer stays inside the card */
-  display: flex; /* Enable flexbox for consistent layout */
-  flex-direction: column; /* Stack content vertically */
-  height: 100%; /* Ensure all cards have consistent height */
-  min-height: 300px; /* Optional: Set a minimum height for the cards */
-}
-
-.card-footer {
-  position: relative; /* Remove absolute positioning to keep it within the flow */
-  margin-top: auto; /* Push the footer to the bottom while being part of the card */
-}
-
 /* Rounded Corners for Cards, Buttons, and Elements */
 .card,
 .button,
@@ -279,7 +266,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card-body {
-    flex-grow: 1; /* Allows the body to expand and take up available space */
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   }
 }
 
