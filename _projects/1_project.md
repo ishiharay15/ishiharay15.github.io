@@ -11,7 +11,7 @@ date: 2024-06-01
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1_project/yolo_oppo_results.gif" title="Project Results" class="img-fluid rounded z-depth-1" %}
+        <!-- {% include figure.liquid loading="eager" path="assets/img/1_project/yolo_oppo_results.gif" title="Project Results" class="img-fluid rounded z-depth-1" %} -->
     </div>
 </div>
 <div class="caption">
@@ -24,7 +24,7 @@ This project focuses on enhancing image and video quality in low-light environme
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1_project/pipeline.jpg" title="Project Pipeline" class="img-fluid rounded z-depth-1" %}
+        <!-- {% include figure.liquid loading="eager" path="assets/img/1_project/pipeline.jpg" title="Project Pipeline" class="img-fluid rounded z-depth-1" %} -->
     </div>
 </div>
 <div class="caption">
@@ -59,7 +59,7 @@ Our results demonstrate that the benchmarked models effectively enhance brightne
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1_project/enhancement_results.jpg" title="Enhancement Results" class="img-fluid rounded z-depth-1" %}
+        <!-- {% include figure.liquid loading="eager" path="assets/img/1_project/enhancement_results.jpg" title="Enhancement Results" class="img-fluid rounded z-depth-1" %} -->
     </div>
 </div>
 <div class="caption">
@@ -70,7 +70,7 @@ We also tested our models on the [Seeing Dynamic Scene in the Dark (SDSD)](https
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1_project/yolo_oppo_results.gif" title="Video Enhancement Results" class="img-fluid rounded z-depth-1" %}
+        <!-- {% include figure.liquid loading="eager" path="assets/img/1_project/yolo_oppo_results.gif" title="Video Enhancement Results" class="img-fluid rounded z-depth-1" %} -->
     </div>
 </div>
 <div class="caption">
