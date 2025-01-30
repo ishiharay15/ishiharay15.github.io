@@ -180,7 +180,10 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: 
+  - "_pages"
+  - "_includes"  # Add this line
+
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -201,6 +204,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+
 keep_files:
   - CNAME
   - .nojekyll
