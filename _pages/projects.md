@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Portfolio of teaching, research and personal projects through my Master's at UC Davis!
+description: Portfolio of teaching, research and personal projects through my PhD's at UC Davis!
 nav: true
 nav_order: 3
 display_categories: [teaching, work, fun]
