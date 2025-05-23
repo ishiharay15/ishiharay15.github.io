@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong>MS ECE</strong> @ <a href="https://www.ece.ucdavis.edu/~chuah/rubinet">RUBINET</a>, UC Davis! ⚡️
+subtitle: <strong>PhD Student ECE</strong> @ <a href="https://www.ece.ucdavis.edu/~chuah/rubinet">RUBINET</a>, UC Davis! ⚡️
 
 profile:
   align: right
@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a 1st year working on my Master's thesis in Electrical and Computer Engineering at University of California, Davis!
+I am a 1st year PhD student in the Electrical and Computer Engineering Department at University of California, Davis!
 I am advised by Prof. Chen-Nee Chuah as a member of
 <a href="https://www.ece.ucdavis.edu/~chuah/rubinet">RUBINET Research Lab</a>.
 I received my B.S. in Electrical Engineering from UC Davis in March 2024.
